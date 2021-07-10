@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(255, 255, 255);
+    color:#fff;
+}
+.contenedor{
+    width: 99%;
+    max-width: 1000px;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 4px;
+}
+.contenedor > div,
+.contenedor .head,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .foot {
+    background: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 3px;
+}
+.contenedor .head{
+    height: 90px;
+    border-bottom: 4px solid rgb(255, 5, 109);
+    background: rgb(224, 5, 53);
+    color:#fff;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/*************** ****************** Menu **************************************/
+.contenedor .head nav{
+    margin-left: 143px;
+}
+.contenedor .head nav ul{
+    display: block;
+}
+.contenedor .head nav ul li{
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    padding: 8px;
+    margin-left: 13px;
+    margin-top: 59px;
+}
+.contenedor .head nav li:hover{
+    color:#dce;
+    background: rgb(243, 97, 121);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    transition: .4s;
+}
+/*************** ****************** Menu Fin **************************************/
+.contenedor .contenido{
+    height:280px;
+    background: #3C3837;
+    grid-column-end:span 3;
+}
+.contenedor .contenido1{
+    height: 520px;
+    background: #ccc;
+    border-radius: 3px;
+    grid-column-end: span 3;
+}
+.contenedor .contenido2{
+    height: 455px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    grid-column-end: span 3;
+}
+/*********************************************************************************/
+.sldr1{
+    width: 100%;
+    height: 520px;
+    border-radius: 3px;
+}
+.fshn{
+    color:#27c9c6;
+    font-size: 73px;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 3px 2px #444;
+    margin-left: 123px;
+    margin-top: 234px;
+    font-weight: 700;
+    position: absolute;
+    z-index: auto;
+}
+.fshn:hover{
+    color:rgb(82, 14, 14);
+    font-size: 73px;
+    font-family: 'Quicksand', sans-serif;
+    transition: .4s;
+}
+.watt{
+    color:rgb(238, 194, 194);
+    font-size: 23px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 123px;
+    margin-top: 314px;
+    font-weight: 500;
+    position: absolute;
+    z-index: auto;
+}
+.botton{
+    width: 110px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    text-align: center;
+    background: rgb(165, 177, 165);
+    opacity: .6;
+    border:1px solid #c90;
+    color:rgb(59, 4, 4);
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 123px;
+    margin-top: 354px;
+    position: absolute;
+    z-index: auto;
+}
+.botton:hover{
+    
+    border-radius: 3px;
+    text-align: center;
+    /* background: rgb(138, 179, 138); */
+    border:1px solid rgb(255, 255, 255);
+    color:rgb(255, 251, 251);
+    background-color: rgb(110, 7, 7);
+    cursor: pointer;
+    transition: .4s;
+    font-size: 13px;
+    font-family: 'Quicksand', sans-serif;
+}
+/* .contenedor .sidebar{
+    height: 230px;
+    grid-column: 3 / 4 ;
+    background: #e23;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2 / 4;
+} */
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3,
+.contenedor .widget-4,
+.contenedor .widget-5,
+.contenedor .widget-6{
+    background: #A6504F;
+    color:#000;
+    height: 240px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor .foot{
+    background: rgb(214, 220, 226);
+    color:rgb(39, 36, 36);
+    grid-column: span 3;
+    font-family: 'Quicksand', sans-serif;
+}
+@media screen and (max-width:768px){
+    body{
+        background: #fcb;
+    }
+    .contenedor .contenido{
+        grid-column: 1 / -1;
+    }
+    .contenedor .sidebar{
+        grid-column: 2 / -1;
+    }
+}
+/*-----------------blusas de mujer-----------------*/
+.contenido .top1,
+.contenido .camm1{
+    height: 250px;
+    width: 225px;
+    margin-left: 185px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.contenido img{
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+.contenido .top1:hover{
+    opacity: 0;
+}
+/*--------------------------2---------------------------*/
+.contenido .top2,
+.contenido .camm2{
+    height: 250px;
+    width: 225px;
+    margin-left: 430px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.contenido img{
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+.contenido .top2:hover{
+    opacity: 0;
+}
+/*--------------------------3---------------------------*/
+.contenido .top3,
+.contenido .camm3{
+    height: 250px;
+    width: 225px;
+    margin-left: 680px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.contenido img{
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+.contenido .top3:hover{
+    opacity: 0;
+}
+/*-------------------------4----------------------------*/
+.contenido .top4,
+.contenido .camm4{
+    height: 250px;
+    width: 225px;
+    margin-left: 930px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.contenido img{
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+.contenido .top4:hover{
+    opacity: 0;
+}
+/*-----------------fin blusas de mujer-----------------*/
+/*-------------------CARTERAS-----------------------*/
+.carte{
+    width: 220px;
+    height: 220px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.carte:hover{
+    border: 1px solid rgb(124, 22, 22);
+    transition: .4s;
+}
+.cartfoll{
+    color: rgb(49, 48, 48);
+    font-family: sans-serif;
+    margin-top: -245px;
+    margin-left: 95px;
+    position: absolute;
+    z-index: auto;
+    text-align: center;
+}
+.crt{
+    width: 280px;
+    height: 390px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.lrm{
+    color: #000;
+    text-align: justify;
+    padding: 4px;
+}
+.cmpr{
+    color:rgb(243, 218, 218);
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgb(128, 17, 17);
+    border: 1px solid #456;
+    margin-left: 104px;
+    margin-top: 10px;
+}
+.cmpr:hover{
+    color: #cbb;
+    background: rgb(191, 50, 50);
+    transition: .5s;
+}
+/*----------------------------------------------------*/
+.carte2{
+    width: 220px;
+    height: 220px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.carte2:hover{
+    border: 1px solid rgb(124, 22, 22);
+    transition: .4s;
+}
+.cartfoll2{
+    color: rgb(49, 48, 48);
+    font-family: sans-serif;
+    margin-top: -245px;
+    margin-left: 95px;
+    position: absolute;
+    z-index: auto;
+    text-align: center;
+}
+.crt2{
+    width: 280px;
+    height: 390px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    padding: 10px;
+    margin-left:350px;
+    margin-top:-410px;
+}
+.lrm2{
+    color: #000;
+    text-align: justify;
+    padding: 4px;
+}
+.cmpr2{
+    color:rgb(243, 218, 218);
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgb(128, 17, 17);
+    border: 1px solid #456;
+    margin-left: 104px;
+    margin-top: 10px;
+}
+.cmpr2:hover{
+    color: #cbb;
+    background: rgb(191, 50, 50);
+    transition: .5s;
+}
+/*----------------------------------------------------*/
+.carte3{
+    width: 220px;
+    height: 220px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.carte3:hover{
+    border: 1px solid rgb(124, 22, 22);
+    transition: .4s;
+}
+.cartfoll3{
+    color: rgb(49, 48, 48);
+    font-family: sans-serif;
+    margin-top: -245px;
+    margin-left: 95px;
+    position: absolute;
+    z-index: auto;
+    text-align: center;
+}
+.crt3{
+    width: 280px;
+    height: 390px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    padding: 10px;
+    margin-left: 680px;
+    margin-top: -411px;
+}
+.lrm3{
+    color: #000;
+    text-align: justify;
+    padding: 4px;
+}
+.cmpr3{
+    color:rgb(243, 218, 218);
+    font-size: 16px;
+    font-family: monospace;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgb(128, 17, 17);
+    border: 1px solid #456;
+    margin-left: 104px;
+    margin-top: 10px;
+}
+.cmpr3:hover{
+    color: #cbb;
+    background: rgb(191, 50, 50);
+    transition: .5s;
+}
+/*----------------FIN DE CARTERAS---------------------*/
